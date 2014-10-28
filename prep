@@ -1,0 +1,7 @@
+ #!/bin/bash
+
+rm -Rf ~/rhci2/public;
+cp -r ~/rhci/dist ~/rhci2/public;
+
+git add .;
+git commit -m "moved assets from /rhci/dist to /public/";
