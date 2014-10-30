@@ -8979,7 +8979,9 @@ span.btn a {
   border-left-color: #007ACC;
 }
 
-
+.wizard li.disabled {
+  color:#999999;
+}
 
 /* staypuft */
 
