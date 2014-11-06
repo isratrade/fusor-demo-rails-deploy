@@ -13,9 +13,14 @@
             url: 'facebook.com'
         },
         {
-            rank: 51,
-            name: 'NFL',
-            url: 'nfl.com',
+            rank: 3,
+            name: 'YouTube',
+            url: 'youtube.com',
+        },
+        {
+            rank: 4,
+            name: 'Yahoo!',
+            url: 'yahoo.com',
         },
       ];
   });
@@ -27,11 +32,11 @@
     <h1>Angular App</h1>
 
     <div class="alert alert-success">
-    This is a sampe AngularJS app that can represent a Single Page Application (SPA).
+    This is a sample AngularJS app that can represent a Single Page Application (SPA).
     </div>
 
     <p>Enter Your Name: <input type="text" ng-model="myname"></p>
-    <h4>Welcome <span style='font-weight:bold;text-decoration:underline;'>{{myname}}</span> to my list of websites</h4>
+    <h4>Welcome <span style='font-weight:bold;text-decoration:underline;'>{{myname}}</span> to the Alexa Website Rankings</h4>
 
     <br />
 
@@ -49,10 +54,10 @@
       <tbody>
         <tr ng-repeat="w in websiteList | filter: nameFilter">
           <td>
-            {{w.name}}
+            {{w.rank}}
           </td>
           <td>
-            {{w.rank}}
+            {{w.name}}
           </td>
           <td>
             {{w.url}}
