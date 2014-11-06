@@ -1,7 +1,7 @@
  #!/bin/bash
 
-rm -Rf ~/rhci2/public;
-cp -r ~/rhci/dist ~/rhci2/public;
+rm -Rf ./public;
+cp -r ~/fusor-demo/dist ./public;
 
 git add .;
-git commit -m "moved assets from /rhci/dist to /public/";
+git commit -m "moved assets from /fusor-demo/dist to /public/";
