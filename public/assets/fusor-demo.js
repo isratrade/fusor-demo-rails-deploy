@@ -459,7 +459,7 @@ catch(err) {
 if (runningTests) {
   require('fusor-demo/tests/test-helper');
 } else {
-  require('fusor-demo/app')['default'].create({"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_VIEW_LOOKUPS":true,"rootElement":"#main"});
+  require('fusor-demo/app')['default'].create({"LOG_ACTIVE_GENERATION":true,"LOG_TRANSITIONS":true,"LOG_VIEW_LOOKUPS":true,"rootElement":"#ember-app"});
 }
 
 /* jshint ignore:end */
