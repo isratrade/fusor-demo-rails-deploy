@@ -3,5 +3,6 @@
 rm -Rf ./public;
 cp -r ~/fusor-demo/dist ./public;
 rm public/index.html
+rm -Rf public/test
 git add .;
 git commit -m "moved assets from /fusor-demo/dist to /public/";
