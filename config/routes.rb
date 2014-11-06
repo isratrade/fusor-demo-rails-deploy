@@ -2,7 +2,9 @@ Rhci2::Application.routes.draw do
   resources :blogs
   get 'fusor', :to => 'blogs#fusor'
   get 'angular', :to => 'blogs#angular'
+
   root :to => 'application#index'
+  get 'ember-cli-live-reload.js', :to => 'application#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
