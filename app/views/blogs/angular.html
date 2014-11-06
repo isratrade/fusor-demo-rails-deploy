@@ -1,0 +1,65 @@
+<script type="text/javascript">
+  var myApp = angular.module('myApp', []);
+  myApp.controller('websitesController', function($scope) {
+      $scope.websiteList = [
+        {
+            rank: 1,
+            name: 'Google',
+            url: 'google.com'
+        },
+        {
+            rank: 2,
+            name: 'Facebook',
+            url: 'facebook.com'
+        },
+        {
+            rank: 51,
+            name: 'NFL',
+            url: 'nfl.com',
+        },
+      ];
+  });
+</script>
+
+<div ng-app='myApp' class="container">
+  <div ng-controller="websitesController">
+
+    <h1>Angular App</h1>
+
+    <div class="alert alert-success">
+    This is a sampe AngularJS app that can represent a Single Page Application (SPA).
+    </div>
+
+    <p>Enter Your Name: <input type="text" ng-model="myname"></p>
+    <h4>Welcome <span style='font-weight:bold;text-decoration:underline;'>{{myname}}</span> to my list of websites</h4>
+
+    <br />
+
+    <p>Filter By: <input type="text" ng-model="nameFilter"> </p>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>URL</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="w in websiteList | filter: nameFilter">
+          <td>
+            {{w.name}}
+          </td>
+          <td>
+            {{w.rank}}
+          </td>
+          <td>
+            {{w.url}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
