@@ -453,7 +453,6 @@ catch(err) {
 
 /* jshint ignore:end */
 
-
 });
 
 if (runningTests) {
