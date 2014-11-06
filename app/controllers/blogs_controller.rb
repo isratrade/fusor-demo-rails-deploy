@@ -1,4 +1,12 @@
 class BlogsController < ApplicationController
+
+  def fusor
+  end
+
+  def angular
+  end
+
+
   # GET /blogs
   # GET /blogs.json
   def index

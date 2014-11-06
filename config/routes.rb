@@ -1,5 +1,7 @@
 Rhci2::Application.routes.draw do
   resources :blogs
+  get 'fusor', :to => 'blogs#fusor'
+  get 'angular', :to => 'blogs#angular'
   root :to => 'blogs#index'
 
   # The priority is based upon order of creation:
